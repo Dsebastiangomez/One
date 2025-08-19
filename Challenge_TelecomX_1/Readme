@@ -1,0 +1,7 @@
+Este proyecto implementa un pipeline de datos en un notebook de Colab para procesar, limpiar y analizar datos de clientes de una empresa de telecomunicaciones. El objetivo principal es realizar un Análisis Exploratorio de Datos (EDA) para identificar los principales factores que impulsan la cancelación del servicio (churn) y generar automáticamente un reporte con los hallazgos clave.
+
+Uso
+Para ejecutar el análisis, sube el archivo TelecomX_Data.json al entorno de Colab en el directorio /content/. Luego, ejecuta todas las celdas del notebook en secuencia. El script se encargará de la limpieza de datos, el análisis de lifts para variables categóricas y numéricas, y la visualización de los resultados.
+
+Salidas Principales
+El notebook genera dos archivos principales: telecomx_churn_gold.csv, un dataset limpio y listo para análisis futuros, y TelecomX_Final_Report.md, un informe en formato Markdown que resume las métricas de calidad de datos y los segmentos de clientes con mayor propensión al churn.
