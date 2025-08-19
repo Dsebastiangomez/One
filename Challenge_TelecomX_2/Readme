@@ -1,0 +1,7 @@
+Este notebook desarrolla un pipeline de machine learning para predecir la probabilidad de que un cliente cancele su servicio. El proceso incluye la preparación de datos, la comparación de dos modelos (Regresión Logística y HistGradientBoostingClassifier), la selección del mejor modelo basado en el área bajo la curva PR (PR-AUC) y la generación de artefactos para producción.
+
+Uso
+Asegúrate de tener el archivo TelecomX_Data.json en el directorio /content/ de tu entorno de Colab. Ejecuta las celdas del notebook de forma secuencial. El script realizará la división de datos, el preprocesamiento, el entrenamiento mediante validación cruzada, la evaluación final y la optimización del umbral de decisión.
+
+Salidas
+El proceso crea un directorio /content/telecomx_artifacts/ que contiene los siguientes artefactos: el pipeline del modelo final serializado (.pkl), un archivo de métricas de rendimiento (metrics.json), un CSV con la importancia de las variables por permutación y un reporte final (TelecomX_Part2_Report.md) que documenta todo el proceso y sus resultados.
